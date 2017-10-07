@@ -519,9 +519,22 @@ section {
 					weight: bolder;
 				} // font
 			} // h2
+
 			p {
 				margin-top: 0;
 			} // p
+
+			.cta {
+			padding: 15px 0;
+
+			a {
+				@include box-shadow(0 0 5px rgba(#000, 0.65));
+				@include border-radius(3px);
+				background-color: $blue;
+				color: #FFF;
+				padding: 5px 10px;
+			} // a
+		} // .cta
 		} // .promotion_txt
 
 		@include susy-breakpoint(640px, 6) {
@@ -555,8 +568,16 @@ section {
 		@include susy-breakpoint(640px, 6) {
 			.wrap {
 				background-image: image-url('pane6.jpg', false, false); 
-				padding-top: 5%;
+				padding-top: 25%;
 			} // .wrap
+		} // bp(640px)
+
+		@include susy-breakpoint(1050px, 12) {
+			.wrap {
+				background-size: auto 295px;
+			} // .wrap
+			height: 295px;
+			padding-top: 0;
 		} // bp(640px)
 	} // .promotion_8
 
