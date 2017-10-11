@@ -320,9 +320,9 @@ section {
 				image: image-url('pane3.jpg', false, false);
 				position: 50% 5%;
 				repeat: no-repeat;
-				size: 80%;
+				size: 60%;
 			} // background
-			padding-top: 65%;
+			padding-top: 50%;
 		} // .wrap
 
 		.promotion_txt {
@@ -364,6 +364,84 @@ section {
 			} // .promotion_txt
 		} // bp(640px)
 	} // .promotion_5
+
+	&.promotion_5_1 {
+		.wrap {
+			background: {
+				image: image-url('pane9.jpg', false, false);
+				position: 50% 5%;
+				repeat: no-repeat;
+				size: 60%;
+			} // background
+			padding-top: 65%;
+		} // .wrap
+
+		.promotion_txt {
+			margin-top: 50px;
+
+			h2 {
+				color: $green;
+			} // h2
+
+			p {
+				margin-top: 0;
+
+				span {
+					font-size: 1.05em;
+					display: block;
+					margin-bottom: 10px;
+				} // span
+			} // p
+		} // .promotion_txt
+
+		.cta {
+			padding: 15px 0;
+
+			a {
+				@include border-radius(3px);
+				background-color: $green;
+				color: #FFF;
+				padding: 5px 10px;
+			} // a
+		} // .cta
+
+		@include susy-breakpoint(640px, 6) {
+			.wrap {
+				background: {
+					position: right center;
+					size: 50%;
+				} // background
+				padding-top: 30px;
+				padding-bottom: 30px;
+			} // .wrap
+
+			.promotion_txt {
+				@include background(linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.85)));
+				@include span(3);
+				margin-top: 0;
+			} // .promotion_txt
+		} // bp(640px)
+
+		@include susy-breakpoint($tablet, 6) {
+			.wrap {
+				background-size: 30%;
+			} // .wrap
+
+			.promotion_txt {
+				@include span(4);
+			} // .promotion_txt
+		} // bp($tablet)
+
+		@include susy-breakpoint($desktop, 12) {
+			.wrap {
+				background-size: 35%;
+			} // .wrap
+
+			.promotion_txt {
+				@include span(7);
+			} // .promotion_txt
+		} // bp($desktop)
+	} // .promotion_5_1
 
 	&.promotion_6 {
 		.wrap {
