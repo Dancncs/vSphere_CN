@@ -941,6 +941,8 @@ section {
       float: left;
       margin-right: 3.44828%; }
       section.promotion_9 .promotion_txt p {
+        font-size: 0.9375em;
+        line-height: 1.1em;
         margin-top: 0; }
       section.promotion_9 .promotion_txt img {
         width: 200px; } }
@@ -968,10 +970,17 @@ section {
       position: absolute;
       bottom: 2%;
       right: 2%; }
-  section.promotion_10 .promotion_txt img {
-    width: 180px; }
-  section.promotion_10 .promotion_txt p strong {
-    font-size: 1.5em; }
+  section.promotion_10 .promotion_txt {
+    padding-left: 40px; }
+    section.promotion_10 .promotion_txt img {
+      margin-bottom: 20px;
+      width: 180px; }
+    section.promotion_10 .promotion_txt h2 {
+      font-family: 'Proximanova Bold';
+      font-weight: bolder;
+      line-height: 1.25; }
+    section.promotion_10 .promotion_txt p {
+      margin-top: 0; }
   section.promotion_10 .cta {
     padding: 15px 0; }
     section.promotion_10 .cta a {

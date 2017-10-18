@@ -698,6 +698,7 @@ section {
 				@include span(3);
 
 				p {
+					@include adjust-font-size-to(15px);
 					margin-top: 0;
 				} // p
 
@@ -738,14 +739,23 @@ section {
 		} // .wrap
 
 		.promotion_txt {
+			padding-left: 40px;
+
 			img {
+				margin-bottom: 20px;
 				width: 180px;
 			} // img
 
+			h2 {
+				font: {
+					family: 'Proximanova Bold';
+					weight: bolder;
+				} // font
+				line-height: 1.25;
+			} // h2
+
 			p {
-				strong {
-					font-size: 1.5em;
-				} // strong
+				margin-top: 0;
 			} // p
 		} // .promotion_txt
 
